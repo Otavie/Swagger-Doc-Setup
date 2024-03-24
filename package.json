@@ -1,0 +1,14 @@
+{
+  "name": "swagger-doc-setup",
+  "version": "1.0.0",
+  "description": "How to use the Swagger - Swagger Doc and Swagger UI",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Otavie Okuoyo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
+}
