@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const swaggerJSDoc = require('swagger-jsdoc')
 const swaggerUI = require('swagger-ui-express')
+const indexRoute = require('./routes/index.routes')
 
 const PORT = process.env.PORT
 
@@ -31,6 +32,8 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs))
 app.get('/', (req, res) => {
     res.status(200).send('Server is hale and healthy!')
 })
+
+app.use('/api', indexRoute)
 
 app.listen((PORT), () => {
     console.log(`App is running on PORT http://localhost:${PORT}`)
